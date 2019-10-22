@@ -1,17 +1,36 @@
-[
+[   
+    {
+        "age": 0, 
+        "id": "xiaomi-mi-a1", 
+        "imageUrl": "img/phones/xiaomi-mi-a1.0.png", 
+        "name": "Xiaomi MI A1\u2122 with Wi-Fi", 
+        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).", 
+        "storage": {
+            "flash": "220MB", 
+            "ram": "256MB"
+        }
+    },
     {
         "age": 0, 
         "id": "motorola-xoom-with-wi-fi", 
         "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
         "name": "Motorola XOOM\u2122 with Wi-Fi", 
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb)."
+        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).", 
+        "storage": {
+            "flash": "32000MB", 
+            "ram": "1000MB"
+        }
     }, 
     {
         "age": 1, 
         "id": "motorola-xoom", 
         "imageUrl": "img/phones/motorola-xoom.0.jpg", 
         "name": "MOTOROLA XOOM\u2122", 
-        "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
+        "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb).", 
+        "storage": {
+            "flash": "32000MB", 
+            "ram": "1000MB"
+        }
     }, 
     {
         "age": 2, 
@@ -19,14 +38,22 @@
         "id": "motorola-atrix-4g", 
         "imageUrl": "img/phones/motorola-atrix-4g.0.jpg", 
         "name": "MOTOROLA ATRIX\u2122 4G", 
-        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone."
+        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone.", 
+        "storage": {
+            "flash": "", 
+            "ram": ""
+        }
     }, 
     {
         "age": 3, 
         "id": "dell-streak-7", 
         "imageUrl": "img/phones/dell-streak-7.0.jpg", 
         "name": "Dell Streak 7", 
-        "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around."
+        "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around.", 
+        "storage": {
+            "flash": "16000MB", 
+            "ram": "512MB"
+        }
     }, 
     {
         "age": 4, 
@@ -34,7 +61,11 @@
         "id": "samsung-gem", 
         "imageUrl": "img/phones/samsung-gem.0.jpg", 
         "name": "Samsung Gem\u2122", 
-        "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price."
+        "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price.", 
+        "storage": {
+            "flash": "220MB", 
+            "ram": "256MB"
+        }
     }, 
     {
         "age": 5, 
@@ -42,7 +73,11 @@
         "id": "dell-venue", 
         "imageUrl": "img/phones/dell-venue.0.jpg", 
         "name": "Dell Venue", 
-        "snippet": "The Dell Venue; Your Personal Express Lane to Everything"
+        "snippet": "The Dell Venue; Your Personal Express Lane to Everything", 
+        "storage": {
+            "flash": "1000MB", 
+            "ram": "512MB"
+        }
     }, 
     {
         "age": 6, 
@@ -50,7 +85,11 @@
         "id": "nexus-s", 
         "imageUrl": "img/phones/nexus-s.0.jpg", 
         "name": "Nexus S", 
-        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet."
+        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet.", 
+        "storage": {
+            "flash": "16384MB", 
+            "ram": "512MB"
+        }
     }, 
     {
         "age": 7, 
@@ -58,14 +97,22 @@
         "id": "lg-axis", 
         "imageUrl": "img/phones/lg-axis.0.jpg", 
         "name": "LG Axis", 
-        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens"
+        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens", 
+        "storage": {
+            "flash": "126MB", 
+            "ram": "256MB"
+        }
     }, 
     {
         "age": 8, 
         "id": "samsung-galaxy-tab", 
         "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg", 
         "name": "Samsung Galaxy Tab\u2122", 
-        "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility."
+        "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility.", 
+        "storage": {
+            "flash": "16384MB", 
+            "ram": "640MB"
+        }
     }, 
     {
         "age": 9, 

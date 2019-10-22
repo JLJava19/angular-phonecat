@@ -8,6 +8,16 @@ h1 {
 }
 
 /* View: Phone list */
+.foto-chiqui{
+  width: 100%;
+  height: auto;
+}
+
+.foto-mediana{
+  width: 350px;
+  height: auto;
+}
+
 .phones {
   list-style: none;
 }
