@@ -8,16 +8,6 @@ h1 {
 }
 
 /* View: Phone list */
-.foto-chiqui{
-  width: 100%;
-  height: auto;
-}
-
-.foto-mediana{
-  width: 350px;
-  height: auto;
-}
-
 .phones {
   list-style: none;
 }
@@ -100,4 +90,14 @@ h1 {
 .specs > li > span {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.thumbnail img{
+  width: 150px;
+  height: auto;
+}
+
+img.responsive{
+  width: 100%;
+  height: auto;
 }

@@ -1,27 +1,49 @@
 <div class="container">
+  <h2>Comparador</h2>
   <div class="row">
-    <div class="col-md-2">
-      Comparador listado de moviles
-      <ul class="list-group">
-        <li class="list-group-item" ng-repeat="phone in $ctrl.phones" ng-click="$ctrl.seleccionar(phone)">
-            <img ng-src="{{phone.imageUrl}}" class="foto-chiqui">
-          {{phone.name}}
-        </li>
-      </ul>
+
+    <!-- 1º columan -->
+    <div class="col-md-2">      
+        <ul class="list-group">
+          <li class="list-group-item" 
+              ng-repeat="phone in $ctrl.phones"
+              ng-click="$ctrl.selecionar(phone)">
+            <img ng-src="{{phone.imageUrl}}" class="responsive"/>
+            {{phone.name}}
+          </li>          
+        </ul>
     </div>
+
+    <!-- 2º columan -->
     <div class="col-md-5">
-      <!--Body content-->
-      <phone-comparador-telefono telefono1="$ctrl.phone1" telefono2="$ctrl.phone2"></phone-comparador-telefono>
+        <div class="thumbnail">
+            <img ng-src="{{$ctrl.phone1.imageUrl}}" alt="{{$ctrl.phone1.id}}">
+            <div class="caption">
+              <h3>{{$ctrl.phone1.id}}</h3>
+              <p> {{$ctrl.phone1.snippet}}</p>              
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Flash {{$ctrl.phone1.storage.flash}} MB
+                    <span class="label label-{{ ($ctrl.phone1.storage.flash >= $ctrl.phone2.storage.flash)?'success':'danger' }}">{{ $ctrl.phone1.storage.flash - $ctrl.phone2.storage.flash}}</span>
+                </li>
+                <li class="list-group-item">
+                  Ram {{$ctrl.phone1.storage.ram}} MB
+                  <span class="label label-{{ ($ctrl.phone1.storage.ram >= $ctrl.phone2.storage.ram)?'success':'danger' }}">{{ $ctrl.phone1.storage.ram - $ctrl.phone2.storage.ram}}</span>
+                </li>                
+            </ul>
+          </div>     
+    </div>
+
+    <!-- 3º columan -->
+    <div class="col-md-5">
       
-     
-
-    </div>
-
-    <div class="col-md-5">
-      <!--Body content-->
-      <phone-comparador-telefono telefono1="$ctrl.phone2" telefono2="$ctrl.phone1"></phone-comparador-telefono>
-
+      <phone-comparador-detalle mostrar="$ctrl.phone2" comparar="$ctrl.phone1"></phone-comparador-detalle>
+            
     </div>
 
   </div>
+  <!-- /.row -->
+
+
 </div>
