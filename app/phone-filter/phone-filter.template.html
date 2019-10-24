@@ -1,0 +1,48 @@
+<div data-ng-controller="AppCtrl">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68939/angular-logo.png" />
+    <h1>Angular Range Filter</h1>
+    <p>Nothing fancy :-)</p>
+    <hr>
+    <label>Min:{{ ui.min | currency }}
+        <input type="range" 
+                min="0" 
+                max="1000"
+                numeric
+                data-ng-model="ui.min" >
+    </label>    
+    <hr>
+    <label>Max: {{ ui.max |  currency }}
+        <input type="range" 
+                min="0" 
+                max="1000"
+                numeric
+                data-ng-model="ui.max">    
+    </label>
+    <div data-ng-if="ui.min>ui.max">
+        <p>Min > Max makes little sense – sorry this is not about great UI/UX/BuzzBuzz ;-)</p>
+    </div>
+        
+    <hr>
+    <table>
+        <caption>Products within price range</caption>
+        <thead>
+            <tr>
+                <th scope="col" 
+                    data-ng-class="{'acc':(ui.sort=='name'), 'dec':(ui.sort=='-name')}"         
+                    data-ng-click="ui.sort = ui.sort=='name'?'-name':'name'">Name</th>
+                <th scope="col" 
+                    data-ng-class="{'acc':(ui.sort=='price'), 'dec':(ui.sort=='-price')}"
+                    data-ng-click="ui.sort = ui.sort=='price'?'-price':'price'">Price</th>
+            </tr>
+        </thead>
+        <tr data-ng-repeat="product in model.products | rangeFilter:'price':ui.min:ui.max | orderBy:ui.sort ">
+            <td>{{ ::product.name }}</td>
+            <td>{{ ::product.price | currency }}</td>           
+        </tr>
+    </table>
+    <pre>model.products = {{ model.products | json}}</pre>
+    
+    
+    
+</div>
+    

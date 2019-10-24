@@ -1,1 +1,6 @@
 CARRITO COMPRA
+{{$ctrl.productos}}
+
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="telefono in $ctrl.productos track by $index">{{telefono.name}}</li>
+</ul>

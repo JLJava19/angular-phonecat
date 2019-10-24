@@ -53,8 +53,9 @@ angular.
 
         console.trace('PhoneComparadorDetalleController');
         var self = this;
-
+        self.añadir = {};
         self.comprar = function(){
+          self.añadir = compraMovil.setProducto(self.mostrar);
           console.trace('click boton compra %o', self.mostrar  );
           //compraMovil.setProducto(self.mostrar);
           $scope.$emit("eventoCompra", { telefono: self.mostrar });

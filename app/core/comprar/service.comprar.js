@@ -3,12 +3,12 @@
     function() {
 
       return {
-        producto: null,
+        producto: [],
         getProducto: function() {
             return this.producto;
         },
         setProducto: function(p) {
-            this.producto = p;
+            this.producto.push(p);
         }
 
       }; //end return

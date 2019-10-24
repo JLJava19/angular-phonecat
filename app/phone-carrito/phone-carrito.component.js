@@ -5,9 +5,10 @@ angular.
   module('phoneCarrito').
   component('phoneCarrito', {
     templateUrl: 'phone-carrito/phone-carrito.template.html',
-    controller: ['$routeParams', 'Phone',
-      function PhoneCarritoController($routeParams, Phone) {
+    controller: ['$routeParams', 'Phone', 'compraMovil', 
+      function PhoneCarritoController($routeParams, Phone, compraMovil) {
         var self = this;
+        self.productos=compraMovil.getProducto();
         /*
         self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
           self.setImage(phone.images[0]);
