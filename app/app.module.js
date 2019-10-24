@@ -7,6 +7,5 @@ angular.module('phonecatApp', [
   'core',
   'phoneDetail',
   'phoneList',
-  'phoneComparador',
-  'phoneComparadorTelefono'
+  'phoneComparador'
 ]);
