@@ -1,5 +1,5 @@
 <div ng-if="!$ctrl.mostrar.name">
-  <p>Selecciona un movil</p>
+  <div class="alert alert-warning" role="alert">Selecciona un movil</div>
   <img ng-src="img/phones/movil.png" alt="Seleccione un movil">
 </div>
 
@@ -19,7 +19,7 @@
         </li>                    
     </ul>
 
-    <button class="btn btn-primary btn-block" ng-click="$ctrl.comprar()">Comprar</button>
+    <button class="btn btn-primary btn-block" ng-click="$ctrl.comprar()"><i class="fas fa-cart-plus fa-2x"></i> Comprar</button>
 
   </div>
 </div>
