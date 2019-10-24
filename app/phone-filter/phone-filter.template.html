@@ -31,16 +31,18 @@
                     data-ng-class="{'acc':(ui.sort=='name'), 'dec':(ui.sort=='-name')}"         
                     data-ng-click="ui.sort = ui.sort=='name'?'-name':'name'">Name</th>
                 <th scope="col" 
-                    data-ng-class="{'acc':(ui.sort=='price'), 'dec':(ui.sort=='-price')}"
-                    data-ng-click="ui.sort = ui.sort=='price'?'-price':'price'">Price</th>
+                    data-ng-class="{'acc':(ui.sort=='ram'), 'dec':(ui.sort=='-ram')}"
+                    data-ng-click="ui.sort = ui.sort=='ram'?'-ram':'ram'">Ram</th>
             </tr>
         </thead>
-        <tr data-ng-repeat="product in model.products | rangeFilter:'price':ui.min:ui.max | orderBy:ui.sort ">
-            <td>{{ ::product.name }}</td>
-            <td>{{ ::product.price | currency }}</td>           
+        <tr data-ng-repeat="product in model.products | rangeFilter:'ram':ui.min:ui.max | orderBy:ui.sort ">
+            <td>{{ product.name }}</td>
+            <td>{{ product.storage.ram }}</td>           
         </tr>
     </table>
+    <!--
     <pre>model.products = {{ model.products | json}}</pre>
+    -->
     
     
     

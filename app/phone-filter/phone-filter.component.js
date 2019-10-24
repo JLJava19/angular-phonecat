@@ -38,25 +38,14 @@ angular.module('app.filter.range',[])
 
 angular.module('app.controller.app',[])
   .controller('AppCtrl',[
-  '$scope',
-  function($scope){
+  '$scope', 'Phone',
+  function($scope, Phone){
       $scope.model = {}
-      $scope.model.products = [
-          { name: 'A', price: 100  },
-          { name: 'B', price: 500  },
-          { name: 'C', price: 120  },
-          { name: 'D', price: 100  },
-          { name: 'E', price: 1.99 },
-          { name: 'F', price: 710  },
-          { name: 'G', price: 123  },
-          { name: 'H', price: 630  },
-          { name: 'I', price: 458  },
-          { name: 'J', price: 820  }            
-      ];
-
+     
+      $scope.model.products=Phone.query();
       $scope.ui = {
           min: 0,
-          max: 250,
+          max: 32000,
           sort: 'name'
       };      
 
