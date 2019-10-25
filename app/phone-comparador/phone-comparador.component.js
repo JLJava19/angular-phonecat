@@ -12,7 +12,18 @@ angular.
 
         var self = this;
 
-        self.phones = Phone.query();
+        self.phones = {};
+
+        Phone.getAll().then( 
+          function successCallback(response) {
+            console.trace("Success");
+            self.phones = response.data;
+          },
+          function errorCallback(response) {
+            console.warn("Error");
+          }
+        );
+
         self.phone1 = {};
         self.phone2 = {};
         self.orderProp = 'age';

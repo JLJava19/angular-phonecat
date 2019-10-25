@@ -7,30 +7,7 @@
       <phone-filter></phone-filter>
   </div>
 
-  <div class="row">
-
-    <!-- 1º columan -->
-    <div class="col-md-2">      
-        <ul class="list-group">
-          <li class="list-group-item" 
-              ng-repeat="phone in $ctrl.phones"
-              ng-click="$ctrl.selecionar(phone)">
-            <img ng-src="{{phone.imageUrl}}" class="responsive"/>
-            {{phone.name}}
-          </li>          
-        </ul>
-    </div>
-
-    <!-- 2º columan -->
-    <div class="col-md-5">
-        <phone-comparador-detalle mostrar="$ctrl.phone1" comparar="$ctrl.phone2"></phone-comparador-detalle>   
-    </div>
-
-    <!-- 3º columan -->
-    <div class="col-md-5">    
-      <phone-comparador-detalle mostrar="$ctrl.phone2" comparar="$ctrl.phone1"></phone-comparador-detalle>            
-    </div>
-  <!-- /.row -->
+  
 
 
 </div>

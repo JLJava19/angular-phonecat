@@ -13,6 +13,20 @@ angular.
         this.phones = Phone.query();
         this.orderProp = 'age';
         */
+       
+        var self = this;
+
+        self.phone1 = {};
+        self.phone2 = {};
+        self.orderProp = 'age';
+
+       
+
+        this.selecionar = function(phone){
+          console.trace('seleccionado movil');
+          self.phone2 = self.phone1;
+          self.phone1 = phone;
+        }
       }
     ]
   });
@@ -63,7 +77,17 @@ angular.module('app.controller.app',[])
   function($scope, Phone){
       $scope.model = {}
      
-      $scope.model.products=Phone.query();
+
+      Phone.getAll().then( 
+        function successCallback(response) {
+          console.trace("Success");
+          $scope.model.products = response.data;
+        },
+        function errorCallback(response) {
+          console.warn("Error");
+        }
+      );
+
       $scope.ui = {
           min: 0,
           max: 32000,

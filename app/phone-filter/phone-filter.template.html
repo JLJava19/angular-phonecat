@@ -4,7 +4,7 @@
     <label>Min:{{ ui.min }} MB
         <input type="range" 
                 min="0" 
-                max="1000"
+                max="32000"
                 numeric
                 data-ng-model="ui.min" >
     </label>    
@@ -21,8 +21,9 @@
     </div>
         
     <hr>
+    <div>
     <table>
-        <caption>Products within price range</caption>
+        <caption>Telefono</caption>
         <thead>
             <tr>
                 <th scope="col" 
@@ -33,19 +34,46 @@
                     data-ng-click="ui.sort = ui.sort=='storage.flash'?'-storage.flash':'storage.flash'">Flash</th>
             </tr>
         </thead>
-        <tr data-ng-repeat="product in model.products | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort ">
-            <td>{{ product.name }}</td>
-            <td>{{ product.storage.flash }}</td>           
-        </tr>
+        
     </table>
+</div>
+<br><br>
 
 
-
-    <!--
-    <pre>model.products = {{ model.products | json}}</pre>
-    -->
     
     
+    <div class="container">
+
+      
+        <div class="row">
+      
+          <!-- 1º columan -->
+          <div class="col-md-2">      
+              <ul class="list-group">
+                <li class="list-group-item" 
+                data-ng-repeat="phone in model.products | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort "
+                    ng-click="$ctrl.selecionar(phone)">
+                  <img ng-src="{{phone.imageUrl}}" class="responsive"/>
+                  {{phone.name}} - {{phone.storage.flash}}
+                </li>          
+              </ul>
+          </div>
+      
+          <!-- 2º columan -->
+          <div class="col-md-5">
+              <phone-comparador-detalle mostrar="$ctrl.phone1" comparar="$ctrl.phone2"></phone-comparador-detalle>   
+          </div>
+      
+          <!-- 3º columan -->
+          <div class="col-md-5">    
+            <phone-comparador-detalle mostrar="$ctrl.phone2" comparar="$ctrl.phone1"></phone-comparador-detalle>            
+          </div>
+        <!-- /.row -->
+      
+      
+      </div>
+
+
     
 </div>
     
