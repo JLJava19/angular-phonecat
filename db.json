@@ -1,126 +1,132 @@
 {
-	"phones":[
-	{
-        "age": 0, 
-        "id": "xiaomi-mi-a1", 
-        "imageUrl": "img/phones/xiaomi-mi-a1.0.png", 
-        "name": "Xiaomi MI A1\u2122 with Wi-Fi", 
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).", 
-        "storage": {
-            "flash": 220, 
-            "ram": 256
-        }
+  "phones": [
+    {
+      "age": 0,
+      "id": "xiaomi-mi-a1",
+      "imageUrl": "img/phones/xiaomi-mi-a1.0.png",
+      "name": "Xiaomi MI A1™ with Wi-Fi",
+      "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
+      "storage": {
+        "flash": 220,
+        "ram": 256
+      }
     },
     {
-        "age": 0, 
-        "id": "motorola-xoom-with-wi-fi", 
-        "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
-        "name": "Motorola XOOM\u2122 with Wi-Fi", 
-        "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).", 
-        "storage": {
-            "flash": 32000, 
-            "ram": 1000
-        }
-    }, 
+      "age": 0,
+      "id": "motorola-xoom-with-wi-fi",
+      "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg",
+      "name": "Motorola XOOM™ with Wi-Fi",
+      "snippet": "The Next, Next Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).",
+      "storage": {
+        "flash": 32000,
+        "ram": 1000
+      }
+    },
     {
-        "age": 1, 
-        "id": "motorola-xoom", 
-        "imageUrl": "img/phones/motorola-xoom.0.jpg", 
-        "name": "MOTOROLA XOOM\u2122", 
-        "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb).", 
-        "storage": {
-            "flash": 32000, 
-            "ram": 1000
-        }
-    }, 
+      "age": 1,
+      "id": "motorola-xoom",
+      "imageUrl": "img/phones/motorola-xoom.0.jpg",
+      "name": "MOTOROLA XOOM™",
+      "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb).",
+      "storage": {
+        "flash": 32000,
+        "ram": 1000
+      }
+    },
     {
-        "age": 2, 
-        "carrier": "AT&T", 
-        "id": "motorola-atrix-4g", 
-        "imageUrl": "img/phones/motorola-atrix-4g.0.jpg", 
-        "name": "MOTOROLA ATRIX\u2122 4G", 
-        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone.", 
-        "storage": {
-            "flash": 2300, 
-            "ram": 600
-        }
-    }, 
+      "age": 2,
+      "carrier": "AT&T",
+      "id": "motorola-atrix-4g",
+      "imageUrl": "img/phones/motorola-atrix-4g.0.jpg",
+      "name": "MOTOROLA ATRIX™ 4G",
+      "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone.",
+      "storage": {
+        "flash": 2300,
+        "ram": 600
+      }
+    },
     {
-        "age": 3, 
-        "id": "dell-streak-7", 
-        "imageUrl": "img/phones/dell-streak-7.0.jpg", 
-        "name": "Dell Streak 7", 
-        "snippet": "Introducing Dell\u2122 Streak 7. Share photos, videos and movies together. It\u2019s small enough to carry around, big enough to gather around.", 
-        "storage": {
-            "flash": 16000, 
-            "ram": 512
-        }
-    }, 
+      "age": 3,
+      "id": "dell-streak-7",
+      "imageUrl": "img/phones/dell-streak-7.0.jpg",
+      "name": "Dell Streak 7",
+      "snippet": "Introducing Dell™ Streak 7. Share photos, videos and movies together. It’s small enough to carry around, big enough to gather around.",
+      "storage": {
+        "flash": 16000,
+        "ram": 512
+      }
+    },
     {
-        "age": 4, 
-        "carrier": "Cellular South", 
-        "id": "samsung-gem", 
-        "imageUrl": "img/phones/samsung-gem.0.jpg", 
-        "name": "Samsung Gem\u2122", 
-        "snippet": "The Samsung Gem\u2122 brings you everything that you would expect and more from a touch display smart phone \u2013 more apps, more features and a more affordable price.", 
-        "storage": {
-            "flash": 220, 
-            "ram": 256
-        }
-    }, 
+      "age": 4,
+      "carrier": "Cellular South",
+      "id": "samsung-gem",
+      "imageUrl": "img/phones/samsung-gem.0.jpg",
+      "name": "Samsung Gem™",
+      "snippet": "The Samsung Gem™ brings you everything that you would expect and more from a touch display smart phone – more apps, more features and a more affordable price.",
+      "storage": {
+        "flash": 220,
+        "ram": 256
+      }
+    },
     {
-        "age": 5, 
-        "carrier": "Dell", 
-        "id": "dell-venue", 
-        "imageUrl": "img/phones/dell-venue.0.jpg", 
-        "name": "Dell Venue", 
-        "snippet": "The Dell Venue; Your Personal Express Lane to Everything", 
-        "storage": {
-            "flash": 1000, 
-            "ram": 512
-        }
-    }, 
+      "age": 5,
+      "carrier": "Dell",
+      "id": "dell-venue",
+      "imageUrl": "img/phones/dell-venue.0.jpg",
+      "name": "Dell Venue",
+      "snippet": "The Dell Venue; Your Personal Express Lane to Everything",
+      "storage": {
+        "flash": 1000,
+        "ram": 512
+      }
+    },
     {
-        "age": 6, 
-        "carrier": "Best Buy", 
-        "id": "nexus-s", 
-        "imageUrl": "img/phones/nexus-s.0.jpg", 
-        "name": "Nexus S", 
-        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet.", 
-        "storage": {
-            "flash": 16384, 
-            "ram": 512
-        }
-    }, 
+      "age": 6,
+      "carrier": "Best Buy",
+      "id": "nexus-s",
+      "imageUrl": "img/phones/nexus-s.0.jpg",
+      "name": "Nexus S",
+      "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet.",
+      "storage": {
+        "flash": 16384,
+        "ram": 512
+      }
+    },
     {
-        "age": 7, 
-        "carrier": "Cellular South", 
-        "id": "lg-axis", 
-        "imageUrl": "img/phones/lg-axis.0.jpg", 
-        "name": "LG Axis", 
-        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens", 
-        "storage": {
-            "flash": 126, 
-            "ram": 256
-        }
-    }, 
+      "age": 7,
+      "carrier": "Cellular South",
+      "id": "lg-axis",
+      "imageUrl": "img/phones/lg-axis.0.jpg",
+      "name": "LG Axis",
+      "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens",
+      "storage": {
+        "flash": 126,
+        "ram": 256
+      }
+    },
     {
-        "age": 8, 
-        "id": "samsung-galaxy-tab", 
-        "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg", 
-        "name": "Samsung Galaxy Tab\u2122", 
-        "snippet": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122 brings you an ultra-mobile entertainment experience through its 7\u201d display, high-power processor and Adobe\u00ae Flash\u00ae Player compatibility.", 
-        "storage": {
-            "flash": 16384, 
-            "ram": 640
-        }
-    }]
-	,
-
-
-
-
-
+      "age": 8,
+      "id": "samsung-galaxy-tab",
+      "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg",
+      "name": "Samsung Galaxy Tab™",
+      "snippet": "Feel Free to Tab™. The Samsung Galaxy Tab™ brings you an ultra-mobile entertainment experience through its 7” display, high-power processor and Adobe® Flash® Player compatibility.",
+      "storage": {
+        "flash": 16384,
+        "ram": 640
+      }
+    },
+    {
+      "age": "12",
+      "id": "xioami-x-12",
+      "imageUrl": "Xioami-x-12.png",
+      "name": "xioami x 12",
+      "snippet": "muy bonito",
+      "storage": {
+        "flash": "12000",
+        "ram": "1024"
+      }
+    }
+  ],
   "tareas": [
     {
       "id": 1,
@@ -168,27 +174,27 @@
       "id": 14
     }
   ],
-  "frutas":[
+  "frutas": [
     {
-        "img":"https://supermercado.eroski.es/images/2388676.jpg",
-        "nombre":"Manzana",
-        "color": "verde",
-        "cantidad":1,
-        "precio":2.96
+      "img": "https://supermercado.eroski.es/images/2388676.jpg",
+      "nombre": "Manzana",
+      "color": "verde",
+      "cantidad": 1,
+      "precio": 2.96
     },
-    {   
-        "img":"https://supermercado.eroski.es/images/17210.jpg",
-        "nombre":"Pera",
-        "color": "verde",
-        "cantidad":1,
-        "precio":1.95
+    {
+      "img": "https://supermercado.eroski.es/images/17210.jpg",
+      "nombre": "Pera",
+      "color": "verde",
+      "cantidad": 1,
+      "precio": 1.95
     },
-    {   
-        "img":"https://supermercado.eroski.es/images/12063319.jpg",
-        "nombre":"Kiwi",
-        "color": "marron",
-        "cantidad":1,
-        "precio":1.93
+    {
+      "img": "https://supermercado.eroski.es/images/12063319.jpg",
+      "nombre": "Kiwi",
+      "color": "marron",
+      "cantidad": 1,
+      "precio": 1.93
     }
   ],
   "posts": [

@@ -6,27 +6,27 @@
 
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Age:</span>
-        <input type="text" class="form-control" placeholder="Poner un número" aria-describedby="basic-addon1" name="age">
+        <input type="text" class="form-control" placeholder="Poner un número" aria-describedby="basic-addon1" ng-model="age">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Id:</span>
-        <input type="text" class="form-control" placeholder="Id" aria-describedby="basic-addon1" name="idTelefono">
+        <input type="text" class="form-control" placeholder="Id" aria-describedby="basic-addon1" ng-model="idTelefono">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Imagen:</span>
-        <input type="text" class="form-control" placeholder="Imagen Url" aria-describedby="basic-addon1" name="imageUrl">
+        <input type="text" class="form-control" placeholder="Imagen Url" aria-describedby="basic-addon1" ng-model="imageUrl">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Nombre:</span>
-        <input type="text" class="form-control" placeholder="Nombre del telefono" aria-describedby="basic-addon1" name="namePhone">
+        <input type="text" class="form-control" placeholder="Nombre del telefono" aria-describedby="basic-addon1" ng-model="namePhone">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Descripción:</span>
-        <input type="text" class="form-control" placeholder="Descripción del telefono" aria-describedby="basic-addon1" name="snippet">
+        <input type="text" class="form-control" placeholder="Descripción del telefono" aria-describedby="basic-addon1" ng-model="snippet">
     </div>
     <br>
     
@@ -36,14 +36,14 @@
 
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Flash:</span>
-        <input type="text" class="form-control" placeholder="Flash del telefono" aria-describedby="basic-addon1" name="flash">
+        <input type="text" class="form-control" placeholder="Flash del telefono" aria-describedby="basic-addon1" ng-model="flash">
     </div>
     <br>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">RAM:</span>
-        <input type="text" class="form-control" placeholder="RAM del telefono" aria-describedby="basic-addon1" name="ram">
+        <input type="text" class="form-control" placeholder="RAM del telefono" aria-describedby="basic-addon1" ng-model="ram">
     </div>
     <br>
     <br>
-    <button type="submit" class="btn btn-primary">Añadir Telefono</button>
+    <button type="submit" ng-click="crearTelefono(age, idTelefono, imageUrl, namePhone, snippet, flash, ram)" class="btn btn-primary">Añadir Telefono</button>
 </fieldset>

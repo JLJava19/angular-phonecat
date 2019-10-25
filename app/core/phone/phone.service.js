@@ -19,7 +19,7 @@ angular.
         return $http.get(url);
       }
       
-      service.crear = function( telefono ){
+      service.crearTelefono = function( telefono ){
         console.log("Crear telefono");
         //let telefono = {"telefono": telefono};
         return $http.post(endpoint , telefono);
