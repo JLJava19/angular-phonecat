@@ -1,9 +1,7 @@
 <div data-ng-controller="AppCtrl">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68939/angular-logo.png" />
-    <h1>Angular Range Filter</h1>
-    <p>Nothing fancy :-)</p>
+    <p>Comparador</p>
     <hr>
-    <label>Min:{{ ui.min | currency }}
+    <label>Min:{{ ui.min }} MB
         <input type="range" 
                 min="0" 
                 max="1000"
@@ -11,10 +9,10 @@
                 data-ng-model="ui.min" >
     </label>    
     <hr>
-    <label>Max: {{ ui.max |  currency }}
+    <label>Max: {{ ui.max }} MB
         <input type="range" 
                 min="0" 
-                max="1000"
+                max="32000"
                 numeric
                 data-ng-model="ui.max">    
     </label>
@@ -31,15 +29,18 @@
                     data-ng-class="{'acc':(ui.sort=='name'), 'dec':(ui.sort=='-name')}"         
                     data-ng-click="ui.sort = ui.sort=='name'?'-name':'name'">Name</th>
                 <th scope="col" 
-                    data-ng-class="{'acc':(ui.sort=='ram'), 'dec':(ui.sort=='-ram')}"
-                    data-ng-click="ui.sort = ui.sort=='ram'?'-ram':'ram'">Ram</th>
+                    data-ng-class="{'acc':(ui.sort=='storage.flash'), 'dec':(ui.sort=='-storage.flash')}"
+                    data-ng-click="ui.sort = ui.sort=='storage.flash'?'-storage.flash':'storage.flash'">Flash</th>
             </tr>
         </thead>
-        <tr data-ng-repeat="product in model.products | rangeFilter:'ram':ui.min:ui.max | orderBy:ui.sort ">
+        <tr data-ng-repeat="product in model.products | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort ">
             <td>{{ product.name }}</td>
-            <td>{{ product.storage.ram }}</td>           
+            <td>{{ product.storage.flash }}</td>           
         </tr>
     </table>
+
+
+
     <!--
     <pre>model.products = {{ model.products | json}}</pre>
     -->
@@ -48,3 +49,4 @@
     
 </div>
     
+

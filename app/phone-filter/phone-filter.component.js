@@ -34,6 +34,27 @@ angular.module('app.filter.range',[])
 });
 
 
+angular.module('app.filter.range',[])
+  .filter('rangeFilterByFlash', function () {
+  return function (items, attr, min, max) {
+      var range = [],
+          min=parseFloat(min),
+          max=parseFloat(max);
+      for (var i=0, l=items.length; i<l; ++i){
+          var item = items[i];
+          if(item[attr].flash<=max && item[attr].flash>=min){
+              range.push(item);
+          }
+      }
+
+      // Retornar los telefonos al padre por rango
+      // Y el scope ??????? TODO
+      //$scope.$emit("eventoRango", { telefono: range });
+      //$scope.$emit("eventoRango", range);
+      return range;
+  };
+});
+
 
 
 angular.module('app.controller.app',[])

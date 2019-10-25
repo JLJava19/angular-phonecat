@@ -8,6 +8,7 @@ angular.
     controller: ['Phone',
       function PhoneListController(Phone) {
         this.phones = Phone.query();
+        //this.phones = $scope.model.products;
         this.orderProp = 'age';
       }
     ]

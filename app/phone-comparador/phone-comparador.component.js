@@ -27,9 +27,16 @@ angular.
         // selecionar
 
 
+        $scope.$on("eventoRango", function(event, data){
+
+          //alert('eventoRango en padre ' + data.telefono.length);
+          alert('eventoRango en padre ');
+
+        });
+        
         $scope.$on("eventoCompra", function(event, data){
 
-            alert('eventoCompra en padre ' + data.telefono.id);
+           alert('eventoCompra en padre ' + data.telefono.id);
 
         });
 
