@@ -125,6 +125,17 @@
         "flash": "12000",
         "ram": "1024"
       }
+    },
+    {
+      "age": "12",
+      "id": "pepe",
+      "imageUrl": "pepe.png",
+      "name": "hhhh",
+      "snippet": "ddd",
+      "storage": {
+        "flash": "1000",
+        "ram": "2000"
+      }
     }
   ],
   "tareas": [

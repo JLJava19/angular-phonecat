@@ -38,12 +38,6 @@ angular.
         // selecionar
 
 
-        $scope.$on("eventoRango", function(event, data){
-
-          //alert('eventoRango en padre ' + data.telefono.length);
-          alert('eventoRango en padre ');
-
-        });
         
         $scope.$on("eventoCompra", function(event, data){
 
@@ -72,8 +66,11 @@ angular.
         console.trace('PhoneComparadorDetalleController');
         var self = this;
         self.añadir = {};
+
         self.comprar = function(){
+
           self.añadir = compraMovil.setProducto(self.mostrar);
+          
           console.trace('click boton compra %o', self.mostrar  );
           //compraMovil.setProducto(self.mostrar);
           $scope.$emit("eventoCompra", { telefono: self.mostrar });
