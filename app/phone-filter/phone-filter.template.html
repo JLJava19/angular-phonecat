@@ -1,6 +1,5 @@
 <div data-ng-controller="AppCtrl">
-    <p>Comparador</p>
-    <hr>
+
     <label>Min:{{ ui.min }} MB
         <input type="range" 
                 min="0" 
@@ -8,7 +7,7 @@
                 numeric
                 data-ng-model="ui.min" >
     </label>    
-    <hr>
+
     <label>Max: {{ ui.max }} MB
         <input type="range" 
                 min="0" 
@@ -16,29 +15,24 @@
                 numeric
                 data-ng-model="ui.max">    
     </label>
+
+    <label>
+        Ordenar por: 
+        <span class="badge"
+            data-ng-class="{'acc':(ui.sort=='name'), 'dec':(ui.sort=='-name')}"         
+            data-ng-click="ui.sort = ui.sort=='name'?'-name':'name'">Nombre</span>
+        <span class="badge"
+            data-ng-class="{'acc':(ui.sort=='storage.flash'), 'dec':(ui.sort=='-storage.flash')}"
+            data-ng-click="ui.sort = ui.sort=='storage.flash'?'-storage.flash':'storage.flash'">Flash</span>
+    </label>
+
     <div data-ng-if="ui.min>ui.max">
         <p>Min > Max makes little sense – sorry this is not about great UI/UX/BuzzBuzz ;-)</p>
     </div>
         
     <hr>
-    <div>
-    <table>
-        <caption>Telefono</caption>
-        <thead>
-            <tr>
-                <th scope="col" 
-                    data-ng-class="{'acc':(ui.sort=='name'), 'dec':(ui.sort=='-name')}"         
-                    data-ng-click="ui.sort = ui.sort=='name'?'-name':'name'">Name</th>
-                <th scope="col" 
-                    data-ng-class="{'acc':(ui.sort=='storage.flash'), 'dec':(ui.sort=='-storage.flash')}"
-                    data-ng-click="ui.sort = ui.sort=='storage.flash'?'-storage.flash':'storage.flash'">Flash</th>
-            </tr>
-        </thead>
-        
-    </table>
-</div>
-<br><br>
-
+ 
+<br>
 
     
     
@@ -54,7 +48,9 @@
                 data-ng-repeat="phone in model.products | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort "
                     ng-click="$ctrl.selecionar(phone)">
                   <img ng-src="{{phone.imageUrl}}" class="responsive"/>
-                  {{phone.name}} - {{phone.storage.flash}}
+                  {{phone.name}} 
+                  <br>
+                  Flash: <span class="label label-warning">{{phone.storage.flash}}</span> MB
                 </li>          
               </ul>
           </div>
