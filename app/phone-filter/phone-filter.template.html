@@ -29,7 +29,10 @@
     <div data-ng-if="ui.min>ui.max">
         <p>Min > Max makes little sense – sorry this is not about great UI/UX/BuzzBuzz ;-)</p>
     </div>
-        
+     
+    <div>
+      Nombre: <input type="text" placeholder="Filtrar por nombre" ng-model="nombre">
+    </div>
     <hr>
  
 <br>
@@ -45,7 +48,7 @@
           <div class="col-md-2">      
               <ul class="list-group">
                 <li class="list-group-item" 
-                data-ng-repeat="phone in model.products | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort "
+                data-ng-repeat="phone in model.products | filter:nombre | rangeFilterByFlash:'storage':ui.min:ui.max | orderBy:ui.sort "
                     ng-click="$ctrl.selecionar(phone)">
                   <img ng-src="{{phone.imageUrl}}" class="responsive"/>
                   {{phone.name}} 
