@@ -3,24 +3,29 @@
     function() {
 
       return {
-        producto: [],
-        getProducto: function() {
-            return this.producto;
+
+        compras: new Map(),
+
+        getCompras: function() {
+            console.trace('getCompras');
+            return Array.from( this.compras.values() );
         },
-        setProducto: function(p) {
+        guardarCompra: function(compra) {
+            console.trace('guardarCompra %o', compra);
 
-          let encontrado = this.producto.filter(function (tel){
-                              return tel.id == p.id;
-                              })
+            let c = this.compras.get( compra.id );    // buscamos si existe
 
-          //if (this.producto.filter(telefono => this.producto.telefono.id == p.id)){
-          if (encontrado.telefono.id){
-            alert("Encontrado");
-          }else{
-            this.producto.push({"telefono":p,"cantidad":1});
-          };  
-          
-            
+            if ( c ){           // existe
+
+              c.cantidad++;
+              // this.compras.set( c.id, c );
+
+            }else{                             // no existe, guardar en Map
+
+              this.compras.set( compra.id, //key
+                                compra )   //value
+            }
+
 
 
         }

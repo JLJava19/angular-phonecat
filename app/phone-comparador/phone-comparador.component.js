@@ -41,6 +41,14 @@ angular.
         
         $scope.$on("eventoCompra", function(event, data){
 
+          let compra = {
+            "id": data.telefono.id,
+            "nombre": data.telefono.name,
+            "imagen": data.telefono.imageUrl,
+            "cantidad": 1
+          };
+          compraMovil.guardarCompra(compra);
+
            alert('eventoCompra en padre ' + data.telefono.id);
 
         });
@@ -68,8 +76,6 @@ angular.
         self.añadir = {};
 
         self.comprar = function(){
-
-          self.añadir = compraMovil.setProducto(self.mostrar);
           
           console.trace('click boton compra %o', self.mostrar  );
           //compraMovil.setProducto(self.mostrar);

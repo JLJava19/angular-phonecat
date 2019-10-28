@@ -54,10 +54,12 @@ angular.module('app.filter.range',[])
       var range = [],
           min=parseFloat(min),
           max=parseFloat(max);
-      for (var i=0, l=items.length; i<l; ++i){
-          var item = items[i];
-          if(item[attr].flash<=max && item[attr].flash>=min){
-              range.push(item);
+      if(items){  
+        for (var i=0, l=items.length; i<l; ++i){
+            var item = items[i];
+            if(item[attr].flash<=max && item[attr].flash>=min){
+                range.push(item);
+            }
           }
       }
 
